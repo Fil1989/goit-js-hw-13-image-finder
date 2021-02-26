@@ -53,6 +53,7 @@
     "animate.css": "^4.1.1",
     "basiclightbox": "^4.0.3",
     "core-js": "^3.6.5",
-    "handlebars": "^4.7.6"
+    "handlebars": "^4.7.6",
+    "intersection-observer": "^0.12.0"
   }
 }
