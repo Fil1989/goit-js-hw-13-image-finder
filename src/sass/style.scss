@@ -113,6 +113,9 @@ body.stop-scroll {
   align-items: center;
   margin-top: 20px;
 }
+.btn-primary {
+  visibility: hidden;
+}
 .spinner.is-hidden,
 .btn-primary.is-hidden {
   display: none;

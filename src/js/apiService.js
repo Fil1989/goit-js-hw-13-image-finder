@@ -31,22 +31,22 @@ export default {
   incrementOfPage() {
     this.page += 1;
   },
-  btnBeforePicturesLoaded() {
-    refs.spinner.classList.remove('is-hidden');
-    refs.btnLabel.textContent = 'Loading...';
-    refs.btnShowMore.disabled = true;
-    refs.btnShowMore.classList.remove('is-hidden');
-  },
+  // btnBeforePicturesLoaded() {
+  //   refs.spinner.classList.remove('is-hidden');
+  //   refs.btnLabel.textContent = 'Loading...';
+  //   refs.btnShowMore.disabled = true;
+  // },
   btnAfterPicturesLoaded() {
-    refs.spinner.classList.add('is-hidden');
-    refs.btnLabel.textContent = 'Show more...';
-    refs.btnShowMore.disabled = false;
-    if (this.page !== 1) {
-      window.scrollTo({
-        top: this.scrollOneScreenHeigth,
-        behavior: 'smooth',
-      });
-    }
+    refs.btnShowMore.classList.remove('is-hidden');
+    // refs.spinner.classList.add('is-hidden');
+    // refs.btnLabel.textContent = 'Show more...';
+    // refs.btnShowMore.disabled = false;
+    // if (this.page !== 1) {
+    //   window.scrollTo({
+    //     top: this.scrollOneScreenHeigth,
+    //     behavior: 'smooth',
+    //   });
+    // }
   },
   hideBtnShowMore() {
     refs.btnShowMore.classList.add('is-hidden');
